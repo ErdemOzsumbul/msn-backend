@@ -13,7 +13,12 @@ module.exports = async (req, res) => {
       googleId: null,
     });
     if (!user) return res.status(400).send("Bad Request");
-    res.send("User logged in").status(200);
+    res
+      .send({
+        email: user.email,
+        surname: user.surname,
+      })
+      .status(200);
   } catch (error) {
     console.error(error.message);
     res.status(400).send("Bad Request");

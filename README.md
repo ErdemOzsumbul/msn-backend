@@ -130,10 +130,10 @@ axios.get("/api/news");
 ]
 ```
 
-#### `GET /api//filter/all?query="beşiktaş`
+#### `GET /api/filter/all?query="beşiktaş`
 
 ```ruby
-axios.get("/api/products",
+axios.get("/api/filter/all",
        {
               params:{
                      query: "beşiktaş",

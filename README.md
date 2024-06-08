@@ -73,22 +73,21 @@ module.exports = mongoose.model("news", newsSchema);
 * **Schema:** Imports the Schema class from Mongoose. It is used to define data models.
   
 ### Users Schema Definition
-* **name:** The product's name. Data type: String.
-* **surname:** The product's model. Data type: String.
-* **email:** The product's price. Data type: Number.
-* **provinces:** The provinces where the product is available. Data type: Array.
-* **picture:** The source URL of the product image. Data type: String.
-* **password:** The star rating of the product. Data type: Number.
-* **province:** The number of ratings for the product. Data type: String.
-* **district:** The seller's points. Data type: Number.
-* **googleId:** The keywords associated with the product. Data type: Array.
+* **name:** The user's name. Data type: String.
+* **surname:** The user's surname. Data type: String.
+* **email:** The user's email. Data type: String.
+* **picture:** The source URL of the user image. Data type: String.
+* **password:** The star rating of the user. Data type: String.
+* **province:** The number of ratings for the user. Data type: String.
+* **district:** The user's points. Data type: String.
+* **googleId:** The saves the user's googleId. Data type: String.
 
 ### News Schema Definition
-* **title:** The product's name. Data type: String.
-* **image:** The product's model. Data type: String.
-* **description:** The product's price. Data type: Number.
-* **source:** The provinces where the product is available. Data type: Array.
-* **timestamp:** The source URL of the product image. Data type: String.
+* **title:** The news's name. Data type: String.
+* **image:** The news's model. Data type: String.
+* **description:** The news's. Data type: String.
+* **source:** The provinces where the news is available. Data type: String.
+* **timestamp:** The source URL of the news image. Data type: String.
 
 ### User Model Creation
 * **mongoose.model("user", userSchema):** Creates the "user" model using Mongoose's model function. This model represents the "user" collection and is structured according to the userSchema.
@@ -106,10 +105,9 @@ module.exports = mongoose.model("news", newsSchema);
 This provides an overview of the code's content and function.
 ### Reasons for Using this Database Model: 
 * **Mongoose and MongoDB Integration:** The code uses Mongoose to simplify access to MongoDB, making working with MongoDB straightforward and efficient.
-* **Specific Fields and Relationships:** The product collection's fields (e.g., name, model, price) and relationships (e.g., keywords, provinces) are defined.
-* **Data Manipulation:** The model allows you to perform create, read, update, and delete (CRUD) operations more easily and clearly.
-* **In order to include a product in more than one category, I categorized it with the help of keywords.**
-* **I did not create a collection because I could find products with the help of keywords.**
+* **Specific Fields and Relationships:** The users collection's fields (e.g., name, surname,) and relationships are defined.
+* **Data Manipulation:** The model allows you to perform create, read, (CRUD) operations more easily and clearly.
+* **I did not create a collection because I could find users with the help of keywords.**
 ### REST API Explanation:
 
 #### `GET /api/news`
@@ -183,7 +181,7 @@ axios.post("/api/details",{params:{id:"665ca3a25155e8cc466f0d93"}});
 
 
 
-#### `GET /api/product/details`
+#### `GET /api/notification`
 ```ruby
 axios.get("/api/notification");
 ```

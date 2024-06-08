@@ -1,7 +1,4 @@
-const mongoose = require("mongoose");
-const newsSchema = require("../schema/news");
 const userSchema = require("../schema/users");
-const { OAuth2Client } = require("google-auth-library");
 const crypto = require("crypto");
 
 module.exports = async (req, res) => {

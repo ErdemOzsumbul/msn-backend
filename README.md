@@ -111,14 +111,13 @@ This provides an overview of the code's content and function.
 * **In order to include a product in more than one category, I categorized it with the help of keywords.**
 * **I did not create a collection because I could find products with the help of keywords.**
 ### REST API Explanation:
-#### `GET /api/news`
 
+#### `GET /api/news`
 ```ruby
 axios.get("/api/news");
 ```
 
 `Response /api/news`
-
 ```ruby
 [
     {
@@ -146,7 +145,6 @@ axios.get("/api/products",
 ```
 
 `Response /api//filter/all?query="beşiktaş"`
-
 ```ruby
 [
     {
@@ -161,8 +159,7 @@ axios.get("/api/products",
 ]
 ```
 
-#### `GET /api/details?id="665ca3a25155e8cc466f0d93"`
-
+#### `GET /api/details?id="665ca3a25155e8cc466f0d93`
 ```ruby
 axios.post("/api/details",{params:{id:"665ca3a25155e8cc466f0d93"}});
 ```
@@ -182,15 +179,12 @@ axios.post("/api/details",{params:{id:"665ca3a25155e8cc466f0d93"}});
 
 
 
-#### `POST /api/product/details"`
-
-
+#### `GET /api/product/details`
 ```ruby
 axios.get("/api/notification");
 ```
 
  `Response /api/notification"`
-
 ```ruby
 [
     {
@@ -220,14 +214,12 @@ axios.get("/api/notification");
 ]
 ```
 
-#### `GET /api/weather"`
-
+#### `GET /api/weather`
 ```ruby
 axios.get("/api/weather");
 ```
 
- `Response /api/weather"`
-
+`Response /api/weather"`
 ```ruby
 {
     "city": "Izmir",
@@ -239,7 +231,7 @@ axios.get("/api/weather");
 ```
 
 
-#### `POST /api/login"`
+#### `POST /api/login`
 
 ```ruby
 axios.pot("/api/auth/login");
@@ -254,30 +246,26 @@ axios.pot("/api/auth/login");
     "email": "tes2t@test2.com",
     "picture": "https://test2.test2.com/test2"
 }
-
 ```
 
 
-#### `POST /api/auth/register"`
-
+#### `POST /api/auth/register`
 ```ruby
 axios.pot("/api/auth/register");
 ```
 
 `Response /api/auth/register"`
-
 ```ruby
   User registered
 ```
 
-#### `POST /api/auth/googlelogin"`
+#### `POST /api/auth/googlelogin`
 
 ```ruby
 axios.pot("/api/auth/register");
 ```
 
 `Response /api/auth/googlelogin"`
-
 ```ruby
 {
     "name": "test",

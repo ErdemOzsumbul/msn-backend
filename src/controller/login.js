@@ -16,6 +16,7 @@ module.exports = async (req, res) => {
     res
       .send({
         email: user.email,
+        name: user.name,
         surname: user.surname,
       })
       .status(200);

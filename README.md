@@ -159,6 +159,8 @@ axios.get("/api/products",
 ]
 ```
 
+
+
 #### `GET /api/details?id="665ca3a25155e8cc466f0d93`
 ```ruby
 axios.post("/api/details",{params:{id:"665ca3a25155e8cc466f0d93"}});
@@ -176,6 +178,8 @@ axios.post("/api/details",{params:{id:"665ca3a25155e8cc466f0d93"}});
       _id: "665ca3a25155e8cc466f0d93"
 }
 ```
+
+
 
 
 
@@ -214,6 +218,9 @@ axios.get("/api/notification");
 ]
 ```
 
+
+
+
 #### `GET /api/weather`
 ```ruby
 axios.get("/api/weather");
@@ -229,6 +236,9 @@ axios.get("/api/weather");
     "icon": "01d",
 }
 ```
+
+
+
 
 
 #### `POST /api/login`
@@ -249,6 +259,8 @@ axios.pot("/api/auth/login");
 ```
 
 
+
+
 #### `POST /api/auth/register`
 ```ruby
 axios.pot("/api/auth/register");
@@ -258,6 +270,10 @@ axios.pot("/api/auth/register");
 ```ruby
   User registered
 ```
+
+
+
+
 
 #### `POST /api/auth/googlelogin`
 

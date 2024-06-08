@@ -238,3 +238,51 @@ axios.get("/api/weather");
 }
 ```
 
+
+#### `POST /api/login"`
+
+```ruby
+axios.pot("/api/auth/login");
+```
+
+ `Response /api/auth/login"`
+
+```ruby
+{
+    "name": "test2",
+    "surname": "test2",
+    "email": "tes2t@test2.com",
+    "picture": "https://test2.test2.com/test2"
+}
+
+```
+
+
+#### `POST /api/auth/register"`
+
+```ruby
+axios.pot("/api/auth/register");
+```
+
+`Response /api/auth/register"`
+
+```ruby
+  User registered
+```
+
+#### `POST /api/auth/googlelogin"`
+
+```ruby
+axios.pot("/api/auth/register");
+```
+
+`Response /api/auth/googlelogin"`
+
+```ruby
+{
+    "name": "test",
+    "surname": "test",
+    "email": "test@test.com",
+    "picture": "https://test.test.com/test"
+}
+```
